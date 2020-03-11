@@ -1,0 +1,2 @@
+rootProject.name='AM-BSSD5650-Midterm'
+include ':app'

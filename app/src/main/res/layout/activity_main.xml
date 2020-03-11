@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/first"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi"
+            android:src="@drawable/w" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bluetooth"
+            android:src="@drawable/b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ultrasonic"
+            android:src="@drawable/ultrs" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resistance"
+            android:src="@drawable/r" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resistnacee"
+            android:src="@drawable/rrr" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infrared"
+            android:src="@drawable/infr" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/second"
+        android:id="@+id/third"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raspberrypiF"
+            android:src="@drawable/rasp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arduino"
+            android:src="@drawable/aroo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mega"
+            android:src="@drawable/arrrr" />
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="left"
+        android:id="@+id/four"
+        android:layout_below="@+id/third"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/total"
+            android:text="Total consumed power"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+       android:layout_below="@+id/four"
+       android:id="@+id/five"
+       android:background="@android:color/holo_blue_light"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/controller"
+        android:text="            Drop controller here"
+        android:layout_gravity="center_horizontal"
+    />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/five"
+        android:id="@+id/six"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifiT"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/six"
+        android:id="@+id/seven"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bluetoothT"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/seven"
+        android:id="@+id/eight"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infraredT"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/eight"
+        android:id="@+id/nine"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ultrasonicT"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/nine"
+        android:id="@+id/ten"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resistanceT"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ten"
+        android:id="@+id/eleven"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resistanceeT"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/twelve"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/eleven"
+        android:gravity="left"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/reset"
+            android:text="Reset"
+            android:background="@android:color/holo_red_light"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
